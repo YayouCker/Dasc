@@ -15,7 +15,6 @@ def tips():
     print("- To use the function data_science.get_values_less_or_more_than() , we can put 'more_than' to get more than a value , and 'less_than' to get less than a value")
     print("- To create a graph with Dasc, we begin by using graph_theory.create_graph() like this : G = graph_theory.create_graph() , and then use the variable (G) to add nodes and etc...")
     print("- To visualize the graph, we use graph_theory.visualize_graph(G), we replace G by the specified graph")
-    print("- To use math.min_max_scaling(), we give it a column like this : math.min_max_scaling(df[column])")
 
 class data_science:
     def find(df, index):
