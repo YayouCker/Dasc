@@ -5,8 +5,9 @@ import numpy as np
 import networkx as nx
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
+from skimpy import skim
 
-__version__ = 1.0
+__version__ = 1.1
 
 def tips():
     print("- To get a column , use <dataframe>[<column>]")
@@ -79,7 +80,7 @@ class data_science:
         return df
 
     def describe(df):
-        return df.describe()
+        return skim(df)
 
     def get_elements_with_type(df, type):
         return df.select_dtypes(include=type)
